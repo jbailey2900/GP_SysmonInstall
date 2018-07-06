@@ -28,7 +28,8 @@ if (!$sysmonService) {
             Write-Host "Installing new version"
             Invoke-Expression "& 'C:\Temp\Sysmon.exe' -AcceptEula -I \\server\DomainFiles\config-client.xml"
         } else {
-            Write-Host "Current Version Found, skipping"
+            Write-Host "Current Version Found, skipping install, updating config"
+			Invoke-Expression "& 'sysmon.exe' -C \\server\DomainFiles\config-client.xml"
         }
 }
 
