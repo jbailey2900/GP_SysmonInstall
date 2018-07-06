@@ -6,11 +6,6 @@ This script relies on the Sysmon.exe, Sysmon64.exe, and config-client.xml files 
 
 Lines that should be modified:
 
-Update these to your server location for download.
-
-$sysmonUrl32 = "https://download.example.com/sysmon.exe"
-$sysmonUrl64 = "https://download.example.com/sysmon64.exe"
-
 Change the \\server to your domain fileserver hosting
 
 Invoke-Expression "& 'C:\Temp\Sysmon.exe' -AcceptEula -I \\server\DomainFiles\config-client.xml"
