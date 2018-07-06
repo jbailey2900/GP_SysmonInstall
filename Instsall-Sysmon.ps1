@@ -1,6 +1,6 @@
 ﻿$sysmonService = Get-Service -Name Sysmon
-$sysmonUrl32 = "https://download.example.com/sysmon.exe"
-$sysmonUrl64 = "https://download.example.com/sysmon64.exe"
+$sysmonUrl32 = "https://live.sysinternals.com/sysmon.exe"
+$sysmonUrl64 = "https://live.sysinternals.com/sysmon64.exe"
 $tempPath = "C:\Temp\Sysmon.exe"
 
 # Check for Temporary path existence
